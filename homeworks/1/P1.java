@@ -1,4 +1,4 @@
-package homeworks;
+
 class Lst<T> {
     T val;
     Lst<T> next;
