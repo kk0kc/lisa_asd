@@ -2,7 +2,9 @@
 class Lst<T> {
     T val;
     Lst<T> next;
+    public Lst() {
 
+    }
     public Lst(T val, Lst<T> next) {
         this.val = val;
         this.next = next;
@@ -56,15 +58,15 @@ class Lst<T> {
 }
 
 public class P1 {
-    public static void main(String[] args) {
-
-        Lst<Integer> lst = Lst.cons(0,
-                Lst.cons(2,
-                        Lst.cons(15,
-                                Lst.cons(4, Lst.cons(9, Lst.cons(6, Lst.cons( 8, null)))
-                                ))));
-        Lst.print(lst);
-        Lst.print(Lst.change12(lst));
-
-    }
+//    public static void main(String[] args) {
+//
+//        Lst<Integer> lst = Lst.cons(0,
+//                Lst.cons(2,
+//                        Lst.cons(15,
+//                                Lst.cons(4, Lst.cons(9, Lst.cons(6, Lst.cons( 8, null)))
+//                                ))));
+//        Lst.print(lst);
+//        Lst.print(Lst.change12(lst));
+//
+//    }
 }
