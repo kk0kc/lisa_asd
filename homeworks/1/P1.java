@@ -48,9 +48,6 @@ class Lst<T> {
             Lst<T> b = a.next;          //b = 2 15 4
             a.next = b.next;            // 0 15 4 -> 2 0 15 4
             b.next = a;
-            //p = b;
-
-            Lst.print(p);
             Lst<T> o = b.next.next;
             b.next.next = change12(o);
             return b;
