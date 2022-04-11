@@ -47,20 +47,20 @@ public class FenwickTree {
         return Arrays.toString(Arrays.copyOf(btree, btree.length));
     }
     public static void main(String[] args){
-//        Scanner sc = new Scanner(System.in);
-//        int n = sc.nextInt();
-//        int changes = sc.nextInt();
-//        int population = sc.nextInt();
-//        FenwickTree tree = new FenwickTree(n);
-//        for (int i = 0; i < changes; i++) {
-//            int index = sc.nextInt();
-//            int value = sc.nextInt();
-//            tree.setValue(index, value);
-//        }
-//        for (int i = 0; i < population; i++) {
-//            int from = sc.nextInt();
-//            int to = sc.nextInt();
-//            System.out.println(tree.getSum(from, to));
-//        }
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int changes = sc.nextInt();
+        int population = sc.nextInt();
+        FenwickTree tree = new FenwickTree(n);
+        for (int i = 0; i < changes; i++) {
+            int index = sc.nextInt();
+            int value = sc.nextInt();
+            tree.setValue(index, value);
+        }
+        for (int i = 0; i < population; i++) {
+            int from = sc.nextInt();
+            int to = sc.nextInt();
+            System.out.println(tree.getSum(from, to));
+        }
     }
 }
