@@ -6,7 +6,7 @@ import java.util.Random;
 
 public class Test {
     public static void main(String[] args) throws IOException {
-        long t1 = 0, t2 = 0, t3 = 0;
+        long t1, t2;
         System.out.println("1 test");
         for (int n = 1; n < 101; n++) {
             t1 = 0;
