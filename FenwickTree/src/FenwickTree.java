@@ -47,20 +47,30 @@ public class FenwickTree {
         return Arrays.toString(Arrays.copyOf(btree, btree.length));
     }
     public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        int changes = sc.nextInt();
-        int population = sc.nextInt();
-        FenwickTree tree = new FenwickTree(n);
-        for (int i = 0; i < changes; i++) {
-            int index = sc.nextInt();
-            int value = sc.nextInt();
-            tree.setValue(index, value);
-        }
-        for (int i = 0; i < population; i++) {
-            int from = sc.nextInt();
-            int to = sc.nextInt();
-            System.out.println(tree.getSum(from, to));
-        }
+        ArrayList<Integer> k = new ArrayList<>();
+        k.add(1);
+        k.add(2);
+        k.add(3);
+        k.add(4);
+        FenwickTree tree = new FenwickTree(k);
+        System.out.println(tree.getSum(1,3));
+        tree.setValue(1, 7);
+        System.out.println(tree.getSum(1,3));
+
+//        Scanner sc = new Scanner(System.in);
+//        int n = sc.nextInt();
+//        int changes = sc.nextInt();
+//        int population = sc.nextInt();
+//        FenwickTree tree = new FenwickTree(n);
+//        for (int i = 0; i < changes; i++) {
+//            int index = sc.nextInt();
+//            int value = sc.nextInt();
+//            tree.setValue(index, value);
+//        }
+//        for (int i = 0; i < population; i++) {
+//            int from = sc.nextInt();
+//            int to = sc.nextInt();
+//            System.out.println(tree.getSum(from, to));
+//        }
     }
 }

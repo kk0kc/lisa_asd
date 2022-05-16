@@ -26,11 +26,12 @@ public class Test {
                 long start1 = System.nanoTime();
                 tree.getSum(from, to);
                 long finish1 = System.nanoTime();
+                t1 += (finish1 - start1);
                 file.close();
 
 
 
-                t1 += (finish1 - start1);
+
             }
             System.out.println(t1/25 );
         }
